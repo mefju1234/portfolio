@@ -21,8 +21,6 @@ body{
     font-size: 30px;
     font-weight: 600;
     text-align: left;
-    
-    
 }
 
 .first p{
@@ -30,88 +28,128 @@ body{
     text-align: center;
 }
 
-.about_me{
+.first form{
     display: flex;
-    flex-direction: row;
-}
-
-.description{
-    font-weight: 200;
-    font-size: 20px;
-    width: 30%;
-    margin-left: 240px;
-    padding-bottom: 10px;
-    letter-spacing: 2px;
-    line-height: 30px;
-    padding-top: 40px;
-}
-
-.photo{
-    margin-left: auto;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-left: auto;
+    color: #000000;
+    padding-bottom: 40px;
 }
 
-.photo img{
-    width: 200px;
-    border-radius: 70px    ;
-    
+.first form input{
+    background-color: #ffffff;
+    color: #000000;
+    width: 500px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: #000000 3px solid;
+    box-shadow: 5px 5px 5px #000000;
+      -moz-box-shadow: 5px 5px 5px #000000;
+      -webkit-box-shadow: 5px 5px 5px #000000;
+      -khtml-box-shadow: 5px 5px 5px #000000;
+}
+.first form input::placeholder{
+    color: #000000;
+}
+
+.first form textarea{
+    background-color: #F29F05;
+    width: 500px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: #000000 3px solid;
+    box-shadow: 5px 5px 5px #000000;
+      -moz-box-shadow: 5px 5px 5px #000000;
+      -webkit-box-shadow: 5px 5px 5px #000000;
+      -khtml-box-shadow: 5px 5px 5px #000000;
+}
+
+.first form textarea::placeholder{
+    color: #000000;
+}
+
+#sub{
+    font-weight: 900;
+}
+#sub:hover{
+    background-color: #000000;
+    color: #F29F05;
+    transition: 1s;
+    box-shadow: 5px 5px 5px #000000;
+      -moz-box-shadow: 5px 5px 5px #000000;
+      -webkit-box-shadow: 5px 5px 5px #000000;
+      -khtml-box-shadow: 5px 5px 5px #000000;
 }
 
 .second{
     background-color: #F2F2F2;
     font-size: 30px;
-    text-align: right;
-    
+    font-weight: 600;
+    text-align: left;
 }
 
 .second p{
     padding: 40px 40px 30px 40px;
     text-align: center;
-    font-weight: 600;
 }
 
-.my_projects{
+.second form{
     display: flex;
-    flex-direction: row;
-}
-
-.about_projects{
-    font-weight: 200;
-    font-size: 20px;
-    width: 30%;
-    padding-top: 40px;
-    margin-right: 240px;
-    padding-bottom: 10px;
-    letter-spacing: 2px;
-    line-height: 30px;
-}
-
-.project_photo{
-    margin-left: auto;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-left: auto;
+    color: #000000;
+    padding-bottom: 40px;
 }
 
-.project_photo img{
-    width: 600px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 5px #ccc;
-      -moz-box-shadow: 10px 10px 5px #ccc;
-      -webkit-box-shadow: 10px 10px 5px #ccc;
-      -khtml-box-shadow: 10px 10px 5px #ccc;
-    
+.second form input{
+    background-color: #F29F05;
+    color: #000000;
+    width: 500px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: #000000 3px solid;
+    box-shadow: 5px 5px 5px #000000;
+      -moz-box-shadow: 5px 5px 5px #000000;
+      -webkit-box-shadow: 5px 5px 5px #000000;
+      -khtml-box-shadow: 5px 5px 5px #000000;
+}
+.second form input::placeholder{
+    color: #000000;
 }
 
-.description_project{
-    font-weight: 200;
-    font-size: 20px;
-    width: 30%;
-    margin-right: 240px;
-    padding-bottom: 10px;
-    letter-spacing: 2px;
-    line-height: 30px;
-    padding-top: 40px;
+.second form textarea{
+    background-color: #F29F05;
+    width: 500px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: #000000 3px solid;
+    box-shadow: 5px 5px 5px #000000;
+      -moz-box-shadow: 5px 5px 5px #000000;
+      -webkit-box-shadow: 5px 5px 5px #000000;
+      -khtml-box-shadow: 5px 5px 5px #000000;
+}
+
+.second form textarea::placeholder{
+    color: #000000;
+}
+
+#sub{
+    font-weight: 900;
+}
+#sub:hover{
+    background-color: #000000;
+    color: #F29F05;
+    transition: 1s;
+    box-shadow: 5px 5px 5px #000000;
+      -moz-box-shadow: 5px 5px 5px #000000;
+      -webkit-box-shadow: 5px 5px 5px #000000;
+      -khtml-box-shadow: 5px 5px 5px #000000;
 }
 
 .third{
@@ -119,8 +157,6 @@ body{
     font-size: 30px;
     font-weight: 600;
     text-align: left;
-    color: #000000;
-    
 }
 
 .third p{
@@ -140,7 +176,7 @@ body{
 }
 
 .third form input{
-    background-color: #F29F05;
+    background-color: #ffffff;
     color: #000000;
     width: 500px;
     margin-bottom: 5px;
@@ -184,35 +220,15 @@ body{
       -khtml-box-shadow: 5px 5px 5px #000000;
 }
 
-.fourth{
+.main_site{
     background-color: #F2F2F2;
     font-size: 30px;
     font-weight: 600;
-    text-align: right;
-    padding-bottom: 40px;
-    text-align: center;
-}
-
-progress{
-    width: 1000px;
-    
-}
-
-
-.fourth p{
-    padding: 40px 40px 30px 40px;
-    text-align: center;
-}
-
-.admin{
-    background-color: #F29F05;
-    font-size: 30px;
-    font-weight: 600;
     text-align: left;
-    color: #000000;
+    padding-top: 40px;
 }
 
-.admin form{
+.main_site form{
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -223,11 +239,7 @@ progress{
     padding-bottom: 40px;
 }
 
-.admin label{
-    padding: 30px;
-}
-
-.admin form input{
+.main_site form input{
     background-color: #F29F05;
     color: #000000;
     width: 500px;
@@ -238,9 +250,6 @@ progress{
       -moz-box-shadow: 5px 5px 5px #000000;
       -webkit-box-shadow: 5px 5px 5px #000000;
       -khtml-box-shadow: 5px 5px 5px #000000;
-}
-.admin form input::placeholder{
-    color: #000000;
 }
 
 #sub{
@@ -254,12 +263,4 @@ progress{
       -moz-box-shadow: 5px 5px 5px #000000;
       -webkit-box-shadow: 5px 5px 5px #000000;
       -khtml-box-shadow: 5px 5px 5px #000000;
-}
-
-.error{
-    padding-top:2px; 
-    padding-bottom: 10px;
-    font-weight:600;
-    font-size: 20px; 
-    color: rgb(85, 0, 0);
 }
