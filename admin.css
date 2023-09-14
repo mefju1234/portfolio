@@ -18,7 +18,7 @@ body{
 
 .first{
     background-color: #F29F05;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     text-align: left;
 }
@@ -86,7 +86,7 @@ body{
 
 .second{
     background-color: #F2F2F2;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     text-align: left;
 }
@@ -154,9 +154,14 @@ body{
 
 .third{
     background-color: #F29F05;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     text-align: left;
+}
+
+.pasek{
+    background-color: #fff;
+    border: #000000 solid 1px;
 }
 
 .third p{
@@ -206,6 +211,8 @@ body{
 .third form textarea::placeholder{
     color: #000000;
 }
+
+
 
 #sub{
     font-weight: 900;

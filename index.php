@@ -13,18 +13,10 @@ $c = mysqli_connect($serwer, $user, $pass, $baza);
 @$message = $_POST["message"];
 @$temat = "Wiadomość od użytkownika";
 @$password = $_POST["password"];
+@$wartosc = $_GET["wartosc"];
+@$id_s = $_GET["id_s"];
 //mail($odbiorca, 'Kontakt', " $message");
-$error = "<p class='error'>Błędne hasło</p>";    
 
-if (isset($_POST['haslo'])) {
-    $podane_haslo = $_POST['haslo'];
-    if ($podane_haslo === '2137') {
-        header('Location: admin.php');
-    } else {
-        $error;   
-        header('Location: index.php#');   
-    }
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +25,7 @@ if (isset($_POST['haslo'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <h1 class="title">portfolio</h1>
@@ -75,19 +68,31 @@ if (isset($_POST['haslo'])) {
         </form>
     </div>
 
-    <div class="fourth">
+        <div class='fourth'>
         <p>Moje umiejętności</p>
-        <label for="file">HTML:</label>
-        <progress id="file" max="100" value="80">80%</progress>
-    </div>
-    
+        <?php
+        $j = mysqli_query($c, "SELECT * FROM `umiej`;");
+        while($f = mysqli_fetch_array($j)){
+        echo "<div style='margin-bottom:30px;'>";
+        echo "<label for=''>" . $f["name"] ."</label><h4>" . $f["wartosc"] . "%</h4>";
+        echo "<progress id='prog' max='100' value='" . $f["wartosc"] ."'>tak</progress>";
+        echo "</div>";
+        }?>
+        </div>
 
     <div class="admin">
         <form method="POST">
             <label for="">Panel administratora</label>
             <input name="haslo" type="password" placeholder="Podaj hasło...">
             <?php
-            echo $error;
+            if (isset($_POST['haslo'])) {
+                $podane_haslo = $_POST['haslo'];
+                if ($podane_haslo === '123456') {
+                    header('Location: admin.php');
+                } else {
+                    echo "<p class='error'>Błędne hasło</p>";     
+                }
+            }
             ?>  
             <input id="sub" type="submit" value="Zaloguj">
         </form>
